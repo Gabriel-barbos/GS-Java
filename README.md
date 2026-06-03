@@ -120,10 +120,20 @@ O sistema possui multiplos metodos de cadastro em `OcorrenciaService`, demonstra
 
 ## Integrantes
 
-- Nome: Adicionar nome
-- RM: Adicionar RM
+- Nome: Gabriel Barbosa
+- RM: 570133
 
-## Possiveis Evolucoes Futuras
+- Nome: Vitor Carvalho Alexandre
+- RM: 562298
+
+- Nome: Pedro Rodrigues Almeida
+- RM: 564711
+ 
+- Nome: Alexandre Martins
+- RM: 561732
+
+## Possiveis
+Evolucoes Futuras
 
 - Integracao com banco de dados.
 - Dashboard web.
