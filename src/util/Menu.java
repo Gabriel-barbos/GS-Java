@@ -28,8 +28,9 @@ public class Menu {
         } while (opcao != 5);
     }
 
+    //menu
     private void imprimirOpcoes() {
-        System.out.println("\n=== SmartCity Alert ===");
+        System.out.println("\n=== SmartCity Alert ----");
         System.out.println("1 - Registrar ocorrencia");
         System.out.println("2 - Listar ocorrencias");
         System.out.println("3 - Resolver ocorrencia");
@@ -37,6 +38,8 @@ public class Menu {
         System.out.println("5 - Sair");
     }
 
+
+    //executando opção
     private void executarOpcao(int opcao) {
         switch (opcao) {
             case 1:

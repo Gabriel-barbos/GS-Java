@@ -10,7 +10,7 @@ O projeto tem foco em Programacao Orientada a Objetos, modelagem bem estruturada
 
 ## Objetivo
 
-Criar uma solucao simples, funcional e organizada capaz de registrar ocorrencias urbanas, listar ocorrencias cadastradas, gerar relatorios simples, resolver ocorrencias e simular notificacoes de alerta.
+Criar uma solução simples, funcional e organizada capaz de registrar ocorrencias urbanas, listar ocorrencias cadastradas, gerar relatorios simples, resolver ocorrencias e simular notificacoes de alerta.
 
 ## Funcionalidades
 
@@ -59,6 +59,20 @@ src/
     `-- Menu.java
 ```
 
+## Classes Principais
+
+Abaixo estão descritas de forma resumida as responsabilidades das principais classes do sistema:
+
+- **`Main`** ([Main.java](file:///c:/java/GS-Java/src/app/Main.java)): Ponto de entrada da aplicação que inicia e controla o fluxo do menu.
+- **`Ocorrencia`** ([Ocorrencia.java](file:///c:/java/GS-Java/src/abstracts/Ocorrencia.java)): Classe abstrata que serve de modelo para os diferentes tipos de incidentes, contendo atributos como id, descrição e status.
+- **`Enchente`, `FaltaEnergia`, `Transito`** (`model/ocorrencias/`): Subclasses que herdam de `Ocorrencia`, especializando o comportamento para cada tipo específico de incidente.
+- **`Sensor`** ([Sensor.java](file:///c:/java/GS-Java/src/model/infraestrutura/Sensor.java)): Representa um sensor urbano inteligente capaz de disparar alertas automáticos ao implementar a interface `Notificavel`.
+- **`Operador`** ([Operador.java](file:///c:/java/GS-Java/src/model/usuario/Operador.java)): Representa o usuário operacional responsável por registrar ou resolver ocorrências no sistema.
+- **`OcorrenciaService`** ([OcorrenciaService.java](file:///c:/java/GS-Java/src/service/OcorrenciaService.java)): Gerencia o ciclo de vida das ocorrências (cadastro, listagem e resolução) aplicando regras de negócio.
+- **`RelatorioService`** ([RelatorioService.java](file:///c:/java/GS-Java/src/service/RelatorioService.java)): Responsável por processar dados de ocorrências para exibição e geração de relatórios de métricas.
+- **`Menu`** ([Menu.java](file:///c:/java/GS-Java/src/util/Menu.java)): Classe utilitária com métodos estáticos para formatação e exibição do menu interativo no console.
+- **`Notificavel`** ([Notificavel.java](file:///c:/java/GS-Java/src/interfaces/Notificavel.java)): Interface que define o contrato para qualquer componente que possa emitir notificações/alertas.
+
 ## Fluxo do Sistema
 
 ```txt
@@ -86,15 +100,6 @@ javac -d out -sourcepath src src/app/Main.java
 java -cp out app.Main
 ```
 
-## Roadmap de Desenvolvimento
-
-1. `chore: create initial project structure`
-2. `feat: add abstract occurrence model`
-3. `feat: implement occurrence inheritance structure`
-4. `feat: implement notification interface and sensors`
-5. `feat: create occurrence service with method overloading`
-6. `feat: implement interactive console menu`
-7. `docs: finalize documentation and refactor project`
 
 ## Explicacao da Modelagem
 
@@ -120,8 +125,17 @@ O sistema possui multiplos metodos de cadastro em `OcorrenciaService`, demonstra
 
 ## Integrantes
 
-- Nome: Adicionar nome
-- RM: Adicionar RM
+- Nome: Gabriel Barbosa
+- RM: 570133
+
+- Nome: Pedro Rodrigues Almeida
+- RM: 564711
+
+- Nome: Vitor Carvalho Alexandre
+- RM: 562298
+
+- Nome: Alexandre Martins Lucas
+- RM: 561732
 
 ## Possiveis Evolucoes Futuras
 
