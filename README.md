@@ -125,17 +125,8 @@ O sistema possui multiplos metodos de cadastro em `OcorrenciaService`, demonstra
 
 ## Integrantes
 
-- Nome: Gabriel Barbosa
-- RM: 570133
-
-- Nome: Pedro Rodrigues Almeida
-- RM: 564711
-
-- Nome: Vitor Carvalho Alexandre
-- RM: 562298
-
-- Nome: Alexandre Martins Lucas
-- RM: 561732
+- Nome: Adicionar nome
+- RM: Adicionar RM
 
 ## Possiveis Evolucoes Futuras
 
